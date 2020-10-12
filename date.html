@@ -5,30 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhập ngày</title>
-    <script>
-        var d = new Date(2018, 11, 24);
-        document.getElementById("díplay").innerHTML = d;
-        </script>
+    <script scr="date.js"></script>
+
 </head>
 
 <body>
-    <form action="" target="blank">
-        <div>
-            <label for="year">Nhập năm</label>
-        </div>
-        <input type="datetime" name="year" id="year">
-        <div>
-            <label for="month">Nhập tháng</label>
-        </div>
-        <input type="datetime" name="month" id="month">
-        <div>
-            <label for="day">Nhập ngày</label>
-        </div>
-        <input type="datetime" name="day" id="day">
-        <br>
-        <br>
-            <input type="button" value="hiển thị" id="display">
-    </form>
+    <table>
+        <tr>
+            <td>Nhập năm:</td>
+            <td>
+                <input type="datetime" name="year" id="year">
+            </td>
+        </tr>
+        <tr>
+            <td>Nhập tháng:</td>
+            <td><input type="datetime" name="month" id="month"></td>
+        </tr>
+        <tr>
+            <td>Nhập ngày:</td>
+            <td>
+                <input type="datetime" name="day" id="day">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input onclick="hienthi()" type="button" value="hiển thị"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p id="display"></p>
+            </td>
+        </tr>
+    </table>
+
+
 
 </body>
 
